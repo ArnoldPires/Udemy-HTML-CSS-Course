@@ -73,6 +73,19 @@ article {
 h2 {
   color: #1f8aa3;
   font-size: 40px;
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 .lauraImg {
   height: 50px;
