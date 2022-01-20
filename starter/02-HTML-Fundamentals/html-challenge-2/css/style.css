@@ -1,10 +1,16 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   line-height: 1.4;
   font-family: sans-serif;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .container {
   margin-left: 25%;
@@ -34,19 +40,32 @@ h2::before {
   text-transform: uppercase;
 }
 img {
+  float: left;
+  margin-right: 40px;
   width: 235px;
+}
+.csic {
+  float: left;
+  margin-top: 20px;
+  width: 30%;
 }
 .cost {
   font-size: 20px;
   color: #000000;
+  float: left;
 }
 .ship {
   color: darkgray;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
+  float: right;
+  margin-bottom: 20px;
+  margin-top: 8px;
 }
 .info {
   margin-top: 20px;
+  clear: both;
+  margin-bottom: 10px;
 }
 a {
   text-decoration: underline;
@@ -81,6 +100,12 @@ a:hover {
 }
 .brown {
   background-color: #885214;
+}
+.pd {
+  width: 25%;
+  float: right;
+  margin-top: -6px;
+  margin-right: 25px;
 }
 h3 {
   font-size: 15px;
