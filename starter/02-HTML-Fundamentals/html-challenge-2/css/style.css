@@ -5,9 +5,8 @@
 body {
   line-height: 1.4;
   font-family: sans-serif;
-  color: darkslategray;
 }
-section {
+.container {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 50px;
@@ -18,12 +17,28 @@ article {
 h2 {
   text-align: center;
   margin: 10px;
+  position: relative;
+}
+h2::before {
+  content: "Sale";
+  background-color: #ec2f2f;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  padding: 7px 15px;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 img {
   width: 235px;
 }
 .cost {
   font-size: 20px;
+  color: #000000;
 }
 .ship {
   color: darkgray;
@@ -40,10 +55,38 @@ a {
 a:hover {
   text-decoration: none;
 }
+.colors {
+  display: flex;
+  margin-top: 25px;
+}
+.black, .blue, .red, .yellow, .green, .brown {
+  margin-right: 15px;
+  padding: 10px;
+  width: 1px;
+}
+.black {
+  background-color: #000000;
+}
+.blue {
+  background-color: #2f6ee2;
+}
+.red {
+  background-color: #ec2f2f;
+}
+.yellow {
+  background-color: #f0bf1e;
+}
+.green {
+  background-color: #90cc20;
+}
+.brown {
+  background-color: #885214;
+}
 h3 {
   font-size: 15px;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 ul li {
   line-height: 30px;
