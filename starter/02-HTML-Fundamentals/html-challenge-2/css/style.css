@@ -39,32 +39,32 @@ h2::before {
   font-weight: bold;
   text-transform: uppercase;
 }
-img {
-  float: left;
-  margin-right: 40px;
-  width: 235px;
+.article-container {
+  display: flex;
+  gap: 30px;
 }
 .csic {
-  float: left;
   margin-top: 20px;
-  width: 30%;
+  flex: 1;
+}
+.product-cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .cost {
   font-size: 20px;
   color: #000000;
-  float: left;
 }
 .ship {
   color: darkgray;
   text-transform: uppercase;
   font-size: 12px;
-  float: right;
-  margin-bottom: 20px;
-  margin-top: 8px;
 }
 .info {
-  margin-top: 20px;
-  clear: both;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 a {
@@ -77,11 +77,10 @@ a:hover {
 .colors {
   display: flex;
   margin-top: 25px;
+  gap: 10px;
 }
 .black, .blue, .red, .yellow, .green, .brown {
-  margin-right: 15px;
   padding: 10px;
-  width: 1px;
 }
 .black {
   background-color: #000000;
@@ -102,21 +101,19 @@ a:hover {
   background-color: #885214;
 }
 .pd {
-  width: 25%;
-  float: right;
-  margin-top: -6px;
-  margin-right: 25px;
+  margin-top: 20px;
+  flex: 1;
 }
 h3 {
   font-size: 15px;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 ul li {
   line-height: 30px;
   list-style: square;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 button {
   color: white;
