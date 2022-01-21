@@ -22,12 +22,15 @@ body {
   font-family: sans-serif;
 }
 .container {
-  width: 800px;
+  width: 105rem;
   margin: 0 auto;
 }
 header {
   padding: 20px 40px;
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 h1 {
   color: #1f8aa3;
@@ -38,7 +41,6 @@ h1 {
 ul,
 ol {
   margin-left: 50px;
-  margin-bottom: 20px;
 }
 ul {
   list-style-type: none;
@@ -85,7 +87,14 @@ h2::after {
   padding: 5px 10px;
   position: absolute;
   top: -10px;
-  right: -25px;
+  right: 0px;
+}
+.author {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .lauraImg {
   height: 50px;
@@ -99,7 +108,7 @@ p {
 #author {
   font-size: 18px;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-left: 15px;
 }
 .postImg {
   width: 100%;
@@ -118,18 +127,36 @@ h3 {
 aside {
   border-top: 5px solid #1f8aa3;
   border-bottom: 5px solid #1f8aa3;
-  padding: 50px 0;
-  width: 500px;
+  padding: 15px 0;
+  width: 25em;
+}
+.art-foot-wrapper {
+  display: flex;
 }
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.name-author {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+span {
+  font-weight: bold;
 }
 .art {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+}
+footer {
+  padding-left: 5em;
 }
 #copyright {
   font-size: 16px;
+  text-align: center;
 }
