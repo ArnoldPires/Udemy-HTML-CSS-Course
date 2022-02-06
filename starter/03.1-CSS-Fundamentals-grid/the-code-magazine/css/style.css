@@ -1,0 +1,166 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+body {
+  margin: 0;
+  border-top: solid #1f8aa3 10px;
+  font-family: sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: flex-start;
+  width: 105rem;
+  margin: 0 auto;
+}
+header {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+}
+h1 {
+  color: #1f8aa3;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+ul,
+ol {
+  margin-left: 50px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #1f8aa3;
+}
+a:hover {
+  color: red;
+  text-decoration: underline orangered;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #1f8aa3;
+}
+article {
+  
+}
+.post-article {
+  margin-bottom: 40px;
+}
+h2 {
+  color: #1f8aa3;
+  font-size: 40px;
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+.author {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.lauraImg {
+  height: 50px;
+  width: 50px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+#author {
+  font-size: 18px;
+  font-style: italic;
+  margin-left: 15px;
+}
+.postImg {
+  width: 100%;
+  height: auto;
+}
+button {
+  font-size: 22px;
+  cursor: pointer;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: #1f8aa3;
+}
+aside {
+  border-top: 5px solid #1f8aa3;
+  border-bottom: 5px solid #1f8aa3;
+  padding: 15px 0;
+  width: 25em;
+}
+.art-foot-wrapper {
+  
+}
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.name-author {
+  
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+span {
+  font-weight: bold;
+}
+.art {
+  font-size: 15px;
+  font-style: italic;
+}
+footer {
+  grid-column: 1 / -1;
+  padding-left: 5em;
+}
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
