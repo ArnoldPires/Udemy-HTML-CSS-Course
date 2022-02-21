@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: 'Inter',sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+table {
+  margin-top: 100px;
+  width: 800px;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+thead th {
+  background-color: #087f5b;
+  color: #fff;
+  width: 25%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #e9ecef ;
+}
+tbody tr:nth-child(even) {
+  background-color:#8fb4da;
+}
+th, td {
+  padding: 16px 24px;
+  text-align: left;
+}
