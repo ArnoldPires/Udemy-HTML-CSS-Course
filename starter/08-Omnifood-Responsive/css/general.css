@@ -49,6 +49,9 @@ Medium: 11px
 /* GENERAL STYLES */
 /* ------------------------ */
 html {
+  /*Font-size: 10px */
+  /*10px / 16px = 0.625 = 62.5% */
+  /*This is the Percentage of normal user's browser font-size setting */
   font-size: 62.5%;
 }
 body {

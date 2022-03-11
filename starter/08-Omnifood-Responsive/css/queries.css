@@ -1,0 +1,16 @@
+/*Some browsers have bugs when using rem in media queries, so always use em */
+
+/* ------------------------ */
+/* Below 1344px (smaller screens) */
+/* ------------------------ */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

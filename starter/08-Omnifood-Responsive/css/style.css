@@ -89,17 +89,6 @@
   color: #cf711f;
   font-weight: 700;
 }
-@media(max-width: 1200px) {
-  .section-hero {
-    background-color: orangered;
-  }
-}
-@media (max-width: 600px) {
-  .section-hero {
-    border: 20px solid blue;
-    background-color: #14ee39;
-  }
-}
 /* ------------------------ */
 /* Featured in Section */
 /* ------------------------ */
